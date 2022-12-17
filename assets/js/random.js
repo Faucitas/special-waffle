@@ -1,4 +1,4 @@
-let num_days = 3
+// let num_days = 3
 let dailyBudget = [5, 10, 15]
 let stores = ["Gas Station", "Drug Store", "Grocery Store", "Walmart", "Dollar Store"];
 
@@ -13,9 +13,10 @@ let getRandomFromArray = function(values){
 	return values[randomIndex]
 }
 
-let randomBudget = getRandomFromArray(dailyBudget) * num_days;
+let randomBudget = getRandomFromArray(dailyBudget);
 let randomStore = getRandomFromArray(stores);
 let formatBudget = formatter.format(randomBudget);
+
 document.getElementById("store").innerHTML = randomStore;
 document.getElementById("budget").innerHTML = formatBudget;
-document.getElementById("days").innerHTML = num_days;
+
